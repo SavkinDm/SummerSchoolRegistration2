@@ -15,6 +15,9 @@ public class Request {
     private String FirstName;
     private String LastName;
     private String Email;
+
+    private String BirthDate;
+
     private String PhoneNumber;
 
     private String Interests;
@@ -42,10 +45,11 @@ public class Request {
     public Request() {
     }
 
-    public Request(String firstName, String lastName, String email, String phoneNumber, String interests, String comments, String knowledge, String openDoorsDay, String university, String faculty, String department, String yearOfEntry, String englishLevel, String workExperience, String wayOfKnowledgeAboutSummerSchool) {
+    public Request(String firstName, String lastName, String email, String birthDate, String phoneNumber, String interests, String comments, String knowledge, String openDoorsDay, String university, String faculty, String department, String yearOfEntry, String englishLevel, String workExperience, String wayOfKnowledgeAboutSummerSchool) {
         FirstName = firstName;
         LastName = lastName;
         Email = email;
+        BirthDate = birthDate;
         PhoneNumber = phoneNumber;
         Interests = interests;
         Comments = comments;
