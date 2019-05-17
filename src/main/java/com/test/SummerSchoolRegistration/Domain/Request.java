@@ -64,6 +64,22 @@ public class Request {
         WayOfKnowledgeAboutSummerSchool = wayOfKnowledgeAboutSummerSchool;
     }
 
+    public String getBirthDate() {
+        return BirthDate;
+    }
+
+    public void setBirthDate(String birthDate) {
+        BirthDate = birthDate;
+    }
+
+    public String getWorkExperience() {
+        return WorkExperience;
+    }
+
+    public void setWorkExperience(String workExperience) {
+        WorkExperience = workExperience;
+    }
+
     public long getId() {
         return Id;
     }

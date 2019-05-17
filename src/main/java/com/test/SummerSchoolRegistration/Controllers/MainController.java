@@ -1,6 +1,8 @@
 package com.test.SummerSchoolRegistration.Controllers;
 import com.test.SummerSchoolRegistration.Domain.Request;
+import com.test.SummerSchoolRegistration.Domain.User;
 import com.test.SummerSchoolRegistration.Repos.RequestRepo;
+import com.test.SummerSchoolRegistration.Repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,15 +10,20 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.persistence.criteria.CriteriaBuilder;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 @Controller
 public class MainController {
     @Autowired
     RequestRepo requestRepo;
+    @Autowired
+    UserRepo userRepo;
 
     @GetMapping("/")
-    public String main(){
-
+    public String main( Map<String, Object> model){
+       // userRepo.save(new User("a","a"));
         return"aboutus";
     }
 
@@ -38,7 +45,7 @@ public class MainController {
                           @RequestParam (required = false) String YearOfEntry,
                           @RequestParam (required = true) String EnglishLevel,
                           @RequestParam (required = true) String WorkExperience,
-                          @RequestParam (required = true) String WayOfKnowledgeAboutSummerSchool){
+                          @RequestParam (required = true) String WayOfKnowledgeAboutSummerSchool, Map<String, Object> model){
 
         System.out.println(Name +Surname + Email);
         System.out.println(BirthDate+ PhoneNumber  );
@@ -54,6 +61,23 @@ public class MainController {
 
 
      return "regform";
+    }
+
+    @GetMapping("/list")
+    public String list(Map<String, Object> model){
+
+        List<Request> requests = requestRepo.findAll();
+        model.put("ListOfRequests",requests);
+
+        return"list";
+    }
+
+    @GetMapping("/request")
+    public String productPage(@RequestParam(required = true)long Id, Map<String, Object> model){
+        Request request = requestRepo.findById(Id).get();
+        model.put("request",request);
+
+        return "request";
     }
 
 }

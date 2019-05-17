@@ -5,9 +5,7 @@
 <@nav.navbar />
 
 <div class="container">
-
     <div class="row">
-
      <div class="col-md-8 col-md-offset-3 mt-3">
         <h1>
             Заявка на поступление в Летнюю Школу OpenWay
@@ -49,42 +47,42 @@
                  <div class="form-group">
                      <label for="InputInterests">Чем вам было бы интересно заниматься? *</label>
                     <div class="form-group form-check">
-                        <input type="checkbox"  class="form-check-input" id="Interest"  value="Бизнес-анализ, IT-консалтинг" name="Interest">
+                        <input type="checkbox"  class="form-check-input" id="Interest"  value=" Бизнес-анализ IT-консалтинг" name="Interest">
                         <label class="form-check-label"   for="Interest1">Бизнес-анализ, IT-консалтинг</label>
                     </div>
 
                     <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="Interest"  value="Backend-разработка"  name="Interest">
-                        <label class="form-check-label" for="Interest2">Backend-разработка</label>
+                        <input type="checkbox" class="form-check-input" id="Interest"  value=" Backend-разработка"  name="Interest">
+                        <label class="form-check-label" for="Interest2"> Backend-разработка</label>
                     </div>
 
                      <div class="form-group form-check">
-                         <input type="checkbox" class="form-check-input" id="Interest" value="Frontend-разработка" name="Interest">
+                         <input type="checkbox" class="form-check-input" id="Interest" value=" Frontend-разработка" name="Interest">
                          <label class="form-check-label"  for="Interest3"> Frontend-разработка</label>
                      </div>
 
                      <div class="form-group form-check">
-                         <input type="checkbox" class="form-check-input" id="Interest" value="Тестирование, управление качеством" name="Interest">
+                         <input type="checkbox" class="form-check-input" id="Interest" value=" Тестирование, управление качеством" name="Interest">
                          <label class="form-check-label"  for="Interest4">Тестирование, управление качеством</label>
                      </div>
 
                      <div class="form-group form-check">
-                         <input type="checkbox" class="form-check-input" id="Interest" value="5"  name="Interest">
+                         <input type="checkbox" class="form-check-input" id="Interest" value=" Создание технической документации"  name="Interest">
                          <label class="form-check-label"  for="Interest5">Создание технической документации</label>
                      </div>
 
                      <div class="form-group form-check">
-                         <input type="checkbox" class="form-check-input" id="Interest" value="Внедрение сложного ПО (enterprise)" name="Interest">
+                         <input type="checkbox" class="form-check-input" id="Interest" value=" Внедрение сложного ПО (enterprise)" name="Interest">
                          <label class="form-check-label"  for="Interest6">Внедрение сложного ПО (enterprise)</label>
                      </div>
 
                      <div class="form-group form-check">
-                         <input type="checkbox" class="form-check-input" id="Interest" value="Участие в финтех-проектах" name="Interest">
+                         <input type="checkbox" class="form-check-input" id="Interest" value=" Участие в финтех-проектах" name="Interest">
                          <label class="form-check-label"  for="Interest7">Участие в финтех-проектах</label>
                      </div>
 
                      <div class="form-group form-check">
-                         <input type="checkbox" class="form-check-input" id="Interest" value="Работа с базами данных" name="Interest">
+                         <input type="checkbox" class="form-check-input" id="Interest" value=" Работа с базами данных" name="Interest">
                          <label class="form-check-label"   for="Interest8">Работа с базами данных</label>
                      </div>
                  </div>
@@ -157,9 +155,8 @@
                     <label for="inputWayOfKnowledgeAboutSummerSchool">Откуда Вы узнали о Летней школе?</label>
                     <input type="text" class="form-control" name="WayOfKnowledgeAboutSummerSchool" placeholder="Откуда Вы узнали о Летней школе?">
                 </div>
-
-                <input type="hidden" name="_csrf" value="${_csrf.token}"/>
                 <div class="form-group ">
+                    <input type="hidden" name="_csrf" value="${_csrf.token}"/>
                 <button type="submit" class="btn btn-primary">Отправить заявку</button>
                 </div>
 
@@ -168,7 +165,6 @@
         </form>
 
     </div>
-
     </div>
 </div>
 </@c.page>
