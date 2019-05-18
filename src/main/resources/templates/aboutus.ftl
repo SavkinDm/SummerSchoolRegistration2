@@ -16,31 +16,31 @@
                 <div class="form-row">
                     <div class="form-group col-md-6 ">
                         <label for="inputName">Имя *</label>
-                        <input type="text"  required  class="form-control" name="Name" placeholder="First name">
+                        <input type="text"  required  class="form-control" name="Name" placeholder="Имя">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputSurname">Фамилия *</label>
-                        <input type="text" required  class="form-control" name="Surname" placeholder="Last name">
+                        <input type="text" required  class="form-control" name="Surname" placeholder="Фамилия">
                     </div>
                 </div>
 
                 <!-- email -->
                 <div class="form-group ">
                     <label for="InputEmail">Email *</label>
-                    <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Email">
                     <small id="emailHelp" required class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
 
                 <!-- birth date -->
                 <div class="form-group">
                     <label for="InputBirthDate">Дата рождения *</label>
-                    <input type="date" required  class="form-control" name="BirthDate" placeholder="Birth date">
+                    <input type="date" required  class="form-control" name="BirthDate" placeholder="Дата рождения">
                 </div>
 
                 <!-- phone number -->
                 <div class="form-group">
                     <label for="InputPhoneNumber">Мобильный телефон</label>
-                    <input type="tel" class="form-control" name="PhoneNumber" placeholder="Phone number">
+                    <input type="tel" class="form-control" name="PhoneNumber" placeholder="Мобильный телефон">
                 </div>
 
                 <!-- Interests -->

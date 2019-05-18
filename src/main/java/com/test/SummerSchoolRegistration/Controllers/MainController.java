@@ -23,7 +23,6 @@ public class MainController {
 
     @GetMapping("/")
     public String main( Map<String, Object> model){
-       // userRepo.save(new User("a","a"));
         return"aboutus";
     }
 
@@ -47,18 +46,10 @@ public class MainController {
                           @RequestParam (required = true) String WorkExperience,
                           @RequestParam (required = true) String WayOfKnowledgeAboutSummerSchool, Map<String, Object> model){
 
-        System.out.println(Name +Surname + Email);
-        System.out.println(BirthDate+ PhoneNumber  );
-        System.out.println(Interest);
-        System.out.println(Comments + Knowledge + OpenDoorDay);
-        System.out.printf(University + Faculty + Department);
-        System.out.println(YearOfEntry + EnglishLevel + WorkExperience + WayOfKnowledgeAboutSummerSchool);
 
         Request request = new Request(Name, Surname , Email, BirthDate, PhoneNumber, Interest, Comments, Knowledge, OpenDoorDay, University,
                 Faculty, Department, YearOfEntry,EnglishLevel, WorkExperience, WayOfKnowledgeAboutSummerSchool);
         requestRepo.save(request);
-
-
 
      return "regform";
     }
@@ -74,8 +65,9 @@ public class MainController {
 
     @GetMapping("/request")
     public String productPage(@RequestParam(required = true)long Id, Map<String, Object> model){
-        Request request = requestRepo.findById(Id).get();
-        model.put("request",request);
+
+            Request request = requestRepo.findById(Id).get();
+            model.put("request",request);
 
         return "request";
     }

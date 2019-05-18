@@ -9,10 +9,10 @@
         <div class="row ">
             <div class="col-md-6 mt-5">
                 <label> Войти </label>
-                <@l.auth "/login" />
+                <@l.auth "/login" "Войти" />
             </div>
         </div>
     </div>
-    <a href="/registration"> Add new user </a>
+
 </@c.page>
 

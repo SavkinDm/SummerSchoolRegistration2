@@ -1,4 +1,4 @@
-<#macro auth path>
+<#macro auth path todo>
     <form action="${path}" method="post">
         <div class="form-group">
             <label for="InputUsername">Login</label>
@@ -9,7 +9,7 @@
             <input type="password" class="form-control" name="password" id="InputPassword">
         </div>
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-        <button type="submit" class="btn btn-primary"> Войти</button>
+        <button type="submit" class="btn btn-primary"> ${todo}</button>
     </form>
 </#macro>
 
@@ -17,7 +17,7 @@
     <div>
         <form action="/logout" method="post">
             <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-            <input type="submit" value="Sign Out"/>
+            <button type="submit" value="Sign Out" class="btn btn-primary"> Выйти</button>
         </form>
     </div>
 </#macro>

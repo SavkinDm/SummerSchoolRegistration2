@@ -3,5 +3,15 @@
 <@c.page>
 
     <@nav.navbar />
-success
+
+    <div class="row mt-5">
+        <div class="col-xs-6 col-sm-5"></div>
+        <div class="col-xs-6 col-sm-4">
+            <h5> Успех! </h5>
+        </div>
+
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6 col-sm-4">.</div>
+    </div>
+
 </@c.page>

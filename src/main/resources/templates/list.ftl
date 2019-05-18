@@ -20,5 +20,16 @@
             </#list>
         </div>
     </div>
+
     <@l.logout/>
+    <div class="container mt-2" >
+
+    </div>
+
+    <div>
+        <form action="/registration" method="get">
+            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+            <button type="submit" class="btn btn-primary">Зарегистрировать нового администратора</button>
+        </form>
+    </div>
 </@c.page>
