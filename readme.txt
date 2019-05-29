@@ -1,6 +1,6 @@
-аккаунт администратора
-login admin
-password admin
+admin account
+login: admin
+password: admin
 
-пароль от БД 
+Database password 
 root
